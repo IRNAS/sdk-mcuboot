@@ -14,4 +14,13 @@
 		zephyr,code-partition = &boot_partition;
 	};
 };
+&uart0 {
+	status = "okay";
+	current-speed = <115200>;
+	tx-pin = <21>;
+	rx-pin = <26>;
+	rts-pin = <0xFFFFFFFF>;
+	cts-pin = <0xFFFFFFFF>;
+};
+
 #endif
